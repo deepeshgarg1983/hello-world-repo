@@ -1,6 +1,5 @@
 name: Matrix config
 'on': push
-      workflow_dispatch:
 jobs:
   deploy-on-ubuntu:
     runs-on: ubuntu-latest
