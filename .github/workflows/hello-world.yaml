@@ -1,8 +1,15 @@
-name: Hello World
+name: Matrix config
 'on': push
+      workflow_dispatch:
 jobs:
-  hello-job:
+  deploy-on-ubuntu:
     runs-on: ubuntu-latest
     steps:
-      - name: Echo text
-        run: 'echo "Hello, world how are you doing!"'
+      - name: Echo docker info
+        run: docker info
+   deploy-on-ubuntu:
+     runs-on: windows-latest
+    steps:
+      - name: Echo docker details
+        run: docker info
+
